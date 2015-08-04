@@ -10,7 +10,7 @@ public class Javatest9 {
 		float W = scn.nextFloat();
 		
 		if (H>165&&W<45){
-			System.out.println("追吧");
+			System.out.println("放膽追吧");
 		}
 		else{if(H>165&&W>45){
 			System.out.println("太大隻了");
