@@ -9,6 +9,7 @@ public class javatest6 {
 		System.out.println("請輸入底");
 		float l =scn.nextFloat();
 		float x=h*l/2;
+		System.out.println("三角形面積是"+x);
 		
 		
 		
