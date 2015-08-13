@@ -12,12 +12,6 @@ public class Javatest38 {
 		
 		
 		
-		float data1[m][p]= new float[][];
-		
-		
-		
-		float data2[p][n]= new float[][];
-		
 		
 		
 		
@@ -32,11 +26,9 @@ public class Javatest38 {
 		                for(int k = 0; k<3 ; k++ ){
 		                    c[p][q]=data1[i][k]*data2[k][j];
 		
-		
-		
 		                }q++;
 		                }p++;q=0;
 		                }
-	}
 
+}
 }

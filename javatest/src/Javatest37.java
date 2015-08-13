@@ -19,13 +19,13 @@ public class Javatest37 {
 		data[p][1]=scn. nextFloat();
 		data[p][2]=scn. nextFloat();
 		data[p][3]=(data[p][0]+data[p][1]+data[p][2])/3;		
-		}
+		                           }
 		System.out.println("全員資料如下 ");
 		
 		for (int i = 0 ; i<5 ; i++){
 		System.out.println(name[i]+"\t"+data[i][0]+"\t"+data[i][1]+"\t"+data[i][2]+"\t"+data[i][3]);
 		
-		}
+		                           }
 	int o=0 ; int n=0 ;int i =0;
 		for ( i = 0 ; i<5 ; i++){
 	
@@ -35,8 +35,8 @@ public class Javatest37 {
 		}else{
 		n++;
 		
-	}
-		}
+	         }
+		                         }
 		System.out.println("平均不及格"+o+"人");
 		System.out.println("平均及格"+n+"人");
 		
@@ -45,12 +45,12 @@ public class Javatest37 {
 	     if(data[t][3]>max){
 	    	 max = data[t][3];
 	    	 t++;
-	     }
+	                       }
 		if(data[t][3]<min){
 			min = data[t][3];
 			t++;
-		}
-	}
+		                  }
+	                 }
 		System.out.println("最高分"+max+"分");
 	    System.out.println("最低分"+min+"分");
 	
@@ -62,14 +62,14 @@ public class Javatest37 {
 					float v1 = data[q][3];
 					data[q][3]=data[j][3];
 					data[j][3]= v1;
-}
-}
-}
+                                          }
+                               }
+                             }
 		for(int u = 0; u<5 ; u++){
-			System.out.println("第"+u+"名"+data[u][3]+"分");
+			System.out.println(data[u][3]+"分");
 
 	
 		
-	}
+	                             }
 }
 }
