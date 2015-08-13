@@ -51,11 +51,25 @@ public class Javatest37 {
 			t++;
 		}
 	}
-		System.out.print("程蔼だ"+max+"だ");
-	    System.out.print("程だ"+min+"だ");
+		System.out.println("程蔼だ"+max+"だ");
+	    System.out.println("程だ"+min+"だ");
 	
 	
+	    int j = 0;
+		for(int q=0;q<5;q++){
+			for(j=q+1;j<5;j++){
+				if(data[q][3]>data[j][3]){
+					float v1 = data[q][3];
+					data[q][3]=data[j][3];
+					data[j][3]= v1;
+}
+}
+}
+		for(int u = 0; u<5 ; u++){
+			System.out.println("材"+u+""+data[u][3]+"だ");
+
 	
-	
+		
 	}
+}
 }
