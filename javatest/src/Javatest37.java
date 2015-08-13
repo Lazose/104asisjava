@@ -5,12 +5,13 @@ public class Javatest37 {
 		// TODO Auto-generated method stub
 
 		Scanner scn = new Scanner (System.in);
-		
+		float min = 999;
+		float max = 0;
 		float data[][]= new float[5][5];
 		String name[] = new String[5];
 		
-		
-		for(int p= 0 ; p <5 ; p++    ){
+		int p ;
+		for( p= 0 ; p <5 ; p++    ){
 		System.out.print("請輸入學生名");
 		name [p] = scn . next();
 		System.out.println("請輸入該學生成績");
@@ -20,15 +21,41 @@ public class Javatest37 {
 		data[p][3]=(data[p][0]+data[p][1]+data[p][2])/3;		
 		}
 		System.out.println("全員資料如下 ");
-		System.out.println("名字+\\\\t+平均");
+		
 		for (int i = 0 ; i<5 ; i++){
 		System.out.println(name[i]+"\t"+data[i][0]+"\t"+data[i][1]+"\t"+data[i][2]+"\t"+data[i][3]);
+		
 		}
+	int o=0 ; int n=0 ;int i =0;
+		for ( i = 0 ; i<5 ; i++){
+	
+			if (data[i][3]<60){
+		o++;
 		
-		
-		
-		
+		}else{
+		n++;
 		
 	}
-
+		}
+		System.out.println("平均不及格"+o+"人");
+		System.out.println("平均及格"+n+"人");
+		
+	int t ;
+	for(t=0;t<5;t++){
+	     if(data[t][3]>max){
+	    	 max = data[t][3];
+	    	 t++;
+	     }
+		if(data[t][3]<min){
+			min = data[t][3];
+			t++;
+		}
+	}
+		System.out.print("最高分"+max+"分");
+	    System.out.print("最低分"+min+"分");
+	
+	
+	
+	
+	}
 }
