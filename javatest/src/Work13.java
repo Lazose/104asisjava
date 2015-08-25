@@ -3,7 +3,7 @@ import java . awt . event.*;
 import javax . swing.*; 
 import java.util.Scanner;
 import java.util.Random;
-public class Work11 extends JFrame{
+public class Work13 extends JFrame{
 
 	private JLabel name = new JLabel();
     private JTextField jlb1 = new JTextField();
@@ -12,7 +12,7 @@ public class Work11 extends JFrame{
     private Container cp ;
     private String fin   ;
 	//------------------------------------------------
-	public  Work11(){
+	public  Work13(){
 	initComp();
 }
 	private void initComp(){	
@@ -51,7 +51,7 @@ public class Work11 extends JFrame{
 	
 		int w =0; int l =0;int t =0;//贏或輸或平手
 		for( int z = 0 ; z<=2 ; z++){
-			int x = 1 ;
+			int x = 3 ;
 			int y =(rnd.nextInt(3)+1) ;
 			int vi = 1-y;
     
@@ -92,4 +92,5 @@ if (w>l){
 }
 }
 }
+
 }
