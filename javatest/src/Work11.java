@@ -84,7 +84,13 @@ public class Work11 extends JFrame{
 	
 	} 
 	}
-
+if (w>l){
+	System.out.println("");
+}else{if(w<l){
+	System.out.println("");
+}elsr{
+	System.out.println("");
+}
 
 }
 }
