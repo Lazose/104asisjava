@@ -4,57 +4,116 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Work8 {
+public class Work8 extends JFrame{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner scn = new Scanner(System.in);
-		Random rnd = new Random();	
+
+		
+		
+	    private JButton pa = new JButton("布");
+	    private JButton se = new JButton("剪刀");
+	    private JButton st = new JButton("石頭");
+	    private JButton ex = new JButton("返回");
+	    private JLabel jlb1 = new JLabel();
+		private Container cp ;
+	
+		//------------------------------------------
+		public  Work8 (){
+			initComp();//設置work8視窗
+		}
+			private void initComp(){	
+			cp = this.getContentPane();
+			this.setBounds(150,100,400,600);
+			this.setDefaultCloseOperation(EXIT_ON_CLOSE);		
+			cp.setLayout(null);	//視窗 位置 
 		
 		
 		
+		//------------------------------------------
+		pa.setBounds(75,100,80,25);//push 按鍵-布
+		cp.add(pa);
+		pa.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent ae){
 		
 		
+		}	
+		});
+		//-------------------------------------------
+		se.setBounds(75,120,80,25);//push 按鍵-剪刀
+		cp.add(se);
+		se.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent ae){
 		
 		
+		}	
+		});
+		//-------------------------------------------
+		st.setBounds(75,140,80,25);//push 按鍵-石頭
+		cp.add(st);
+		st.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent ae){
 		
 		
+		}	
+		});
 		
 		
-		
-		
-		
+		//------------------------------------------
+		ex.setBounds(75,100,80,25);//push 按鍵-返回
+		cp.add(ex);
+		ex.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent ae){
+			
+			
+		}	
+		});
+		}
+	    
 		
 		
 		
 		//-----------------------------------------
-		int y ;int x ;
-		int[]data= new int[3];
-		for( y = 0 ; y<1 ; y++){
-		data[y]=rnd.nextInt(3);
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		Random rnd = new Random();	
 		
 		
-		int vi = x-y;
+		int w; int l;int t;//贏或輸或平手
+		int[]data= new int[1];
+		for( int z = 0 ; z<1 ; z++){
+		data[z]=rnd.nextInt(3);
+		
+		
+		int y ;int x ;//雙方出的
+		
+		int vi = 'x-y';
         
 		switch(vi){
 		
         	
-		case (vi=0) :
-		System.out.println("Tie");
-		break;
+
 		case (vi=1):
-		System.out.println("Lose");	
+		System.out.println("Lose");
+		z++;l++;
 		break;	
 		case (vi=2):
 		System.out.println("win");	
+		z++;w++;
 		break;
 		case (vi=-1):
 		System.out.println("win"); 
+		z++;w++;
 		break;
 		case (vi=-2):	
 		System.out.println("Lose");
+		z++;l++;
 		break;	
-		System.out.println(data[y]);
+		
+		default :
+		System.out.println("Tie");
+		z++;t++;
+		break;
+		
 		} 
 		//---------------------------------------
 		
@@ -68,6 +127,6 @@ public class Work8 {
 		
 		
 		
-	
+		}
 		}
 }
