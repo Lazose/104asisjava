@@ -7,7 +7,7 @@ public class Work11 extends JFrame{
 
 	private JLabel name = new JLabel();
     private JTextField jlb1 = new JTextField();
-    private JButton back = new JButton("ªğ¦^");
+    private JButton back = new JButton("è¿”å›");
     private JLabel talk = new JLabel();
     private Container cp ;
     private String fin   ;
@@ -19,16 +19,16 @@ public class Work11 extends JFrame{
 	cp = this . getContentPane();
 	this.setBounds(150,100,600,400);	
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);	
-	cp.setLayout(null);//µøµ¡
+	cp.setLayout(null);//è¦–çª—
 	//--------------------------------------
 	
-	name.setBounds(75,60,250,250);	//³]©w ¼ĞÅÒ-¼Ğ¥Ü¿éÄ¹
+	name.setBounds(75,60,250,250);	//è¨­å®š æ¨™ç±¤-æ¨™ç¤ºè¼¸è´
 	name.setText(fin);
 	cp.add(name);
 	System.out.println(name.getText());
 	
 	//--------------------------------------
-	back.setBounds(50,70,250,30);//push «öÁä-ªğ¦^
+	back.setBounds(50,70,250,30);//push æŒ‰éµ-è¿”å›
 	cp.add(back);
 	back.addActionListener(new ActionListener(){
 	public void actionPerformed(ActionEvent ae){
@@ -37,7 +37,7 @@ public class Work11 extends JFrame{
 	}	
 	});}
 	//--------------------------------------
-	//°Å¤M¥ÛÀY¥¬ §PÂ_
+	//å‰ªåˆ€çŸ³é ­å¸ƒ åˆ¤æ–·
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -46,6 +46,7 @@ public class Work11 extends JFrame{
 	
 	
 	
+<<<<<<< HEAD
 
 	//-------------------------------------------
 	
@@ -54,9 +55,15 @@ public class Work11 extends JFrame{
 			int x = 1 ;
 			int y =(rnd.nextInt(3)+1) ;
 			int vi = 1-y;
+=======
+	int w =0; int l =0;int t =0;//è´æˆ–è¼¸æˆ–å¹³æ‰‹
+	for( int z = 0 ; z<=2 ; z++){
+		int x = 1 ;
+		int y =(rnd.nextInt(3)+1) ;
+		int vi = 1-y;
+>>>>>>> origin/master
     
 	switch(vi){
-	
     	
 
 	case (1):
