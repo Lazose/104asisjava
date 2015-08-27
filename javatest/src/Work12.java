@@ -43,10 +43,15 @@ public class Work12 extends JFrame{
 		// TODO Auto-generated method stub
 	Scanner scn = new Scanner(System.in);
 	Random rnd = new Random();	
+	//-------------------------------------------
+	JLabel win = new JLabel();
+	JLabel lose = new JLabel();
+	JLabel tip = new JLabel();
+	Container ap = null ;
+	String win1 = " 你贏了 " ;
+	String lose1 = " 你輸了 " ;
+	String tip1 = " 平手 " ;
 	
-	
-	
-
 	//-------------------------------------------
 	
 		int w =0; int l =0;int t =0;//贏或輸或平手
@@ -84,11 +89,20 @@ public class Work12 extends JFrame{
 	} 
 	}
 if (w>l){
-	System.out.println("");
+	win.setBounds(75,60,250,250);	//設定 標籤-標示輸贏
+	win.setText(win1);
+	ap.add(win);
+	System.out.println(win.getText());
 }else{if(w<l){
-	System.out.println("");
+	lose.setBounds(75,60,250,250);	//設定 標籤-標示輸贏
+	lose.setText(lose1);
+	ap.add(lose);
+	System.out.println(lose.getText());
 }else{
-	System.out.println("");
+	tip.setBounds(75,60,250,250);	//設定 標籤-標示輸贏
+	tip.setText(tip1);
+	ap.add(tip);
+	System.out.println(tip.getText());
 }
 }
 }

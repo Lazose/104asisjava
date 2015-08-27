@@ -3,7 +3,7 @@ import java . awt . event.*;
 import javax . swing.*; 
 import java.util.Scanner;
 import java.util.Random;
-public class insertpicture {
+public class insertpicture extends JFrame{
 	
 	
 	
@@ -15,7 +15,7 @@ public class insertpicture {
 	ImageIcon image0 = new ImageIcon("file://E:GitHub/pa .jpg");
 	ImageIcon image1 = new ImageIcon("file://E:GitHub/se .jpg");
 	ImageIcon image2 = new ImageIcon("file://E:Github/st .jpg");
-		
+	Container cp = null ;	
 	//-------------------------標示空間label
 	
 	JLabel JLb1  = new JLabel();
@@ -31,17 +31,17 @@ public class insertpicture {
 	//--------------------------標示label位置
 	
 	JLb1.setIcon(image0);
-	JLb1.setBounds(0,0,800,600);
+	JLb1.setBounds(0,10,80,60);
 	JLb2.setIcon(image1);
-	JLb2.setBounds(0,0,800,600);
+	JLb2.setBounds(0,40,80,60);
 	JLb3.setIcon(image2);
-	JLb3.setBounds(0,0,800,600);
+	JLb3.setBounds(0,70,80,60);
 	
+	//----------------------------------
 	
-
-
-	
-	
+	cp.add(JLb1);
+	cp.add(JLb2);
+	cp.add(JLb3);
 	
 	
 	
