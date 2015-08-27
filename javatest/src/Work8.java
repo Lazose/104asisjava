@@ -128,5 +128,16 @@ public class Work8 extends JFrame{
 		
 		
 		}
+		private String str1 = " 玩家 " ;
+		private String str2 = " 電腦 " ;
+	    private JLabel player = new JLabel();		
+	    private JLabel com = new JLabel();
+		private Container bp ;
+		player.setBounds(75,60,250,250);	//設定 標籤
+		player.setText(str1);
+		cp.add(player);
+		com.setBounds(75,60,250,250);	//設定 標籤
+		com.setText(str2);
+		cp.add(com);
 		}
 }
