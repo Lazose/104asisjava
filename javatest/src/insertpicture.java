@@ -22,11 +22,6 @@ public class insertpicture extends JFrame{
 	JLabel JLb2  = new JLabel();
 	JLabel JLb3  = new JLabel();
 
-	
-	//--------------------------加入圖片
-	JLb1.add(JLb1);
-	JLb2.add(JLb2);
-	JLb2.add(JLb3);
 
 	//--------------------------標示label位置
 	
@@ -38,7 +33,8 @@ public class insertpicture extends JFrame{
 	JLb3.setBounds(0,70,80,60);
 	
 	//----------------------------------
-	
+	//--------------------------加入圖片
+
 	cp.add(JLb1);
 	cp.add(JLb2);
 	cp.add(JLb3);
